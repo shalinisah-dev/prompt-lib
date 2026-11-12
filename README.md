@@ -1,14 +1,14 @@
 # Prompt Library (`prompt-lib`)
 
-A curated collection of prompts designed to make AI adapt to your voice—rather than gradually replacing your voice with generic AI defaults.
+A curated collection of prompts designed to make AI adapt to your voice and analytical standards—rather than gradually replacing them with generic, sycophantic AI defaults.
 
 ---
 
 ## Philosophy
 
-Something noticeable with AI writing assistants is their tendency to default to **eager-beaver energy**: too much enthusiasm, excessive gratitude, unnecessary deference, and sometimes outright sycophancy.
+Something noticeable with AI assistants is their tendency to default to **eager-beaver energy** and **sycophancy**: too much enthusiasm, excessive gratitude, unnecessary deference, and defaulting to emotional validation over objective truth.
 
-Ideally, memory and personalization features will eventually learn these preferences without repeated prompting. Until then, AI should adapt to your voice, not gradually replace it with its defaults.
+Ideally, memory and personalization features will eventually learn these preferences without repeated prompting. Until then, AI should adapt to your voice and standards, not gradually replace them with its defaults.
 
 ---
 
@@ -30,12 +30,29 @@ Use this prompt when drafting first versions of high-stakes professional replies
 
 ---
 
+### 2. [Objective People Advice ("Bitter-Pill" Prompt)](./prompts/advice/objective-people-advice.md)
+
+AI sycophancy increases when asking for people advice. This "bitter-pill" prompt shifts the AI's task from emotional reassurance to analytical accuracy, explicitly changing what you consider a good response and giving permission for an uncomfortable conclusion.
+
+#### The Prompt
+
+> Be objective with me. Don't agree or disagree by default. Evaluate the evidence, distinguish facts from interpretations, and tell me what conclusion is best supported.
+
+#### Key Principles
+- **No Default Validation**: Stops the model from automatically taking your side.
+- **Facts vs. Interpretations**: Separates observable evidence from personal narrative or assumptions.
+- **Evidence-Backed Conclusions**: Redefines a helpful answer as the most well-supported conclusion—even when it is uncomfortable.
+
+---
+
 ## Repository Structure
 
 ```text
 prompt-lib/
 ├── README.md
 └── prompts/
+    ├── advice/
+    │   └── objective-people-advice.md
     └── communication/
         └── high-stakes-professional-reply.md
 ```
